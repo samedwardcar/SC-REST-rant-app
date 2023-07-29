@@ -18,6 +18,21 @@ Part 11: Populating data for star ratings
 Part 12: Deploying your project
 You may feel intimidated by a large project, but we are going to start really small with some things we already know how to do. Trust that we can go far by taking a lot of small steps!
 
+| Method |           Path           |                      Purpose                     |
+|:------:|:------------------------:|:------------------------------------------------:|
+|   GET  |             /            |                     Home page                    |
+|   GET  |          /places         |                 Places index page                |
+|  POST  |          /places         |                 Create new place                 |
+|   GET  |        /places/new       |        Form page for creating a new place        |
+|   GET  |        /places/:id       |         Details about a particular place         |
+|   PUT  |        /places/:id       |             Update a particular place            |
+|   GET  |     /places/:id/edit     |      Form page for editing an existing place     |
+| DELETE |        /places/:id       |             Delete a particular place            |
+|  POST  |     /places/:id/rant     | Create a rant (comment) about a particular place |
+| DELETE | /places/:id/rant/:rantId | Delete a rant (comment) about a particular place |
+|   GET  |             *            |  404 page (matches any route not defined above)  |
+
+
 Let's get started.
 
 Part 1:
@@ -247,5 +262,50 @@ git commit -m "Adding places controller"
 git push origin main -->
 
 
+Part Seven: Test Routes with Postman
+We can run our code with the nodemon command or in Postman. In this case, let's do both! We currently have three routes defined, as shown in the table below.
 
+| Method |           Path           |                      Purpose                     |
+|:------:|:------------------------:|:------------------------------------------------:|
+|   GET  |             /            |                     Home page                    |
+|   GET  |          /places         |                 Places index page                |
+|   GET  |             *            |  404 page (matches any route not defined above)  |
+
+Directions
+1. Run the nodemon command on your terminal.
+
+2. Open your internet browser of choice, then type http://localhost:3000 in the address bar.
+
+Expected Result: This is the homepage. You should see Hello world! or whatever text you have sent via res.send() in your home route.
+
+3. Type http://localhost:3000/places in the address bar.
+
+Expected Result: This is the places index page. You should see GET /places or whatever text you have sent via res.send() in the places index route in your places.js controller.
+
+4. Type any other address into the address bar. For example, you could use http://localhost:3000/not-a-defined-route or http://localhost:3000/asdf.
+
+Expected Result: This is the 404 page. You should see an h1 tag containing the text 404 Page or whatever text you have sent via res.send() in the wildcard route near the bottom of your index.js file.
+
+5. Open your Postman program and select create a request from the list on the right-hand side. That should get you to the screen that looks like the screenshot below.
+<!--  -->
+
+6. Open a new request in Postman and type in http://localhost:3000 for the URL. Make sure the method is set to GET. Then press the Send button.
+
+Expected Result: This should show a preview of whatever you sent from res.send() in your homepage route. In this case, Postman should show you the same text you saw for the homepage from your browser (e.g., Hello World or similar).
+
+7. Repeat step 6 for the other two routes (the places index page and 404 page). Ensure Postman is showing you the same thing you saw in your browser.
+
+Part Eight: Start a README File
+README files are a great tool for making a first impression. They are often the first and sometimes the only experience someone will have with your project. We will add more later, but let's make sure we have a file set up with some starter content.
+
+Directions
+1. In your rest-rant folder, create a file called README.md.
+
+2. Copy and paste the following text into your README file.
+<!-- 
+# Project REST-Rant
+
+REST-Rant is an app where users can review restaurants. -->
+
+3. Take this moment to do a git commit.
 
