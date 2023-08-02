@@ -18,4 +18,15 @@ router.get('/', (req, res) => {
     // res.send('GET /places')
 })
 
+router.get('/new', (req, res) => {
+    res.render('places/new')
+})
+router.get('/show', (req, res) => {
+    res.render('places/show')
+})
+
+router.get('/edit', (req, res) => {
+    res.render('places/edit')
+})
+
 module.exports = router

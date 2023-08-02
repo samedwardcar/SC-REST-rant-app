@@ -20,16 +20,4 @@ function index (data) {
   )
   }
     
-
-// function index (data) {
-//     return (
-//       <Def>
-//           <main>
-//               <h1>Places</h1>
-//               <p>Find a place.</p>
-//           </main>
-//       </Def>
-//     )
-//   }
-  
 module.exports = index
