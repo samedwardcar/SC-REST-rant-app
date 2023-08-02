@@ -13,10 +13,11 @@ app.get('/', (req, res) => {
 
   })
   
+  app.get('*', (req, res) => {
+    res.render('error404')
+    // res.status(404).send('<h1 style="color: red; text-align: center;">404 Page</h1>')
 
-app.get('*', (req, res) => {
-    res.status(404).send('<h1 style="color: red; text-align: center;">404 Page</h1>')
-})
+  })
 
 app.listen(process.env.PORT)
 
