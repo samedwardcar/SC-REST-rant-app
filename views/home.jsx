@@ -6,6 +6,13 @@ function Home () {
     <Def>
       <main>
         <h1>HOME</h1>
+        <div>
+          <img src="/images/chia-fruit-by-brenda-godinez.jpeg" alt="Chia Fruit Shake"/>
+          <div>
+          Photo by <a href="https://unsplash.com/@cravethebenefits?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brenda Godinez</a> on <a href="https://unsplash.com/photos/MsTOg6rhRVk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+          </div>
+        </div>
         <a href="/places">
           <button type="button" className="btn btn-primary">Places Page</button>
         </a>
