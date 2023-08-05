@@ -4,6 +4,26 @@ router.get('/new', (req, res) => {
     res.render('places/new')
 })
 
+router.post('/', (req, res) => {
+    console.log(req.body)
+    res.send('POST /places')
+})
+
+// breads.post('/', (req, res) => {
+//     console.log(req.body)
+//     if(req.body.hasGluten === 'on') {
+//       req.body.hasGluten = 'true'
+//     } else {
+//       req.body.hasGluten = 'false'
+//     }
+//     Bread.push(req.body)
+//     res.redirect('/breads')
+//   })
+
+router.get('/', (req, res) => {
+    res.render('places/index', { places })
+})
+
 router.get('/', (req, res) => {
     let places = [{
         name: 'H-Thai-ML',
