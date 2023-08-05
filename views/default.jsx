@@ -39,8 +39,20 @@ function Def(html) {
               </li>
             </ul>
           </nav>
-        
-        {html.children}
+
+        <div className="content">
+            {html.children}
+        </div>
+        <div>
+          <footer className="footer" >
+            <div>
+                Social Media Links:
+            </div>
+            <div>
+                <a href="https://github.com/samedwardcar"><img className="github" src="/images/github-mark-white.png" alt="Link to my GitHub" /></a>
+            </div>
+          </footer>
+        </div>
       </body>
     </html>
   );
