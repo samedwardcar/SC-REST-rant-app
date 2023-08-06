@@ -18,23 +18,23 @@ function Def(html) {
             <ul>
               <li>
                 <a href="/">
-                  <button type="button" className="btn btn-primary">
+                  {/* <button type="button" className="btn btn-primary"> */}
                     Home
-                  </button>
+                  {/* </button> */}
                 </a>
               </li>
               <li>
                 <a href="/places">
-                  <button type="button" className="btn btn-primary">
+                  {/* <button type="button" className="btn btn-primary"> */}
                     Places
-                  </button>
+                  {/* </button> */}
                 </a>
               </li>
               <li>
                 <a href="/places/new">
-                  <button type="button" className="btn btn-primary">
+                  {/* <button type="button" className="btn btn-primary"> */}
                     New
-                  </button>
+                  {/* </button> */}
                 </a>
               </li>
             </ul>

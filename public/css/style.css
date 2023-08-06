@@ -1,19 +1,65 @@
-h1, p {
-    text-align: center;
-    color: cornflowerblue;
-  }
+body {
+  background-color: lightblue;
+  text-align: center;
+}
 
-  .content {
-    min-height: calc(100vh - 100px);
-    padding: 50px;
-    /* padding: 40px 40px 0 40px; */
-  }
-  .footer {
-    background-color: cornflowerblue;
-    color: white;
-    text-align: center;
-    height: 100px;
-  }
-  .github {
-    height: 70px;
-  }
+h1,
+p {
+  color: cornflowerblue;
+  /* text-align: center; */
+}
+
+main {
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
+}
+
+nav {
+  background-color: cornflowerblue;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 25px;
+}
+
+nav a {
+  color: white;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  color: pink;
+  text-decoration: none;
+}
+
+form {
+  display: inline;
+}
+
+.content {
+  min-height: calc(100vh - 100px);
+  /* padding: 50px; */
+  /* padding: 40px 40px 0 40px; */
+}
+
+.footer {
+  background-color: cornflowerblue;
+  color: white;
+  height: 100px;
+}
+
+.github {
+  height: 70px;
+}
+
+img {
+  height: 20em;
+}
