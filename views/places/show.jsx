@@ -1,14 +1,14 @@
 const React = require('react')
 const Def = require('../default')
 
-function show () {
+function show (data) {
     return (
-      <Def>
+        <Def>
           <main>
-              <h1>SHOW Places</h1>
+            <h1>{ data.place.name }</h1>
           </main>
-      </Def>
+        </Def>
     )
-  }
-    
+}
+
 module.exports = show
