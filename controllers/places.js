@@ -20,10 +20,12 @@ router.get("/", (req, res) => {
   res.render("places/index", { places });
 });
 
+// NEW
 router.get("/new", (req, res) => {
   res.render("places/new");
 });
 
+// SHOW
 router.get('/:id', (req, res) => {
     let id = Number(req.params.id)
     if (isNaN(id)) {
@@ -35,12 +37,32 @@ router.get('/:id', (req, res) => {
     else {
       res.render('places/show', { place: places[id], id })
     }
-  })  
+  })
+  
+  //PUT
+  router.put('/:id', (req, res) => {
+    res.render('error404')
+  })
 
+//Edit
+//   router.get('/:id/edit', (req, res) => {
+//   res.render("places/edit");
+// });
 router.get('/:id/edit', (req, res) => {
-  res.render("places/edit");
-});
+  let id = Number(req.params.id)
+  if (isNaN(id)) {
+      res.render('error404')
+  }
+  else if (!places[id]) {
+      res.render('error404')
+  }
+  else {
+    res.render('places/edit', { place: places[id] })
+  }
+})
 
+
+// Delete
 router.delete('/:id', (req, res) => {
     let id = Number(req.params.id)
     if (isNaN(id)) {

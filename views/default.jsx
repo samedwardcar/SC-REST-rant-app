@@ -14,7 +14,7 @@ function Def(html) {
         <link rel="stylesheet" href="/css/style.css" />
       </head>
       <body>
-        <nav className="sticky-top">
+        <nav>
           <ul>
             <li>
               <a href="/">
