@@ -77,6 +77,10 @@ function new_form() {
               <option value="WY">Wyoming</option>
             </select>
           </div>
+          <div className="form-group col-sm-4">
+                  <label htmlFor="founded">Founded Year</label>
+                  <input type="number" className="form-control" id="founded" name="founded" defaultValue={new Date().getFullYear()} />
+                </div>
           </div>
           <div className="form-group">
             <label htmlFor="cuisines">Cuisines</label>
